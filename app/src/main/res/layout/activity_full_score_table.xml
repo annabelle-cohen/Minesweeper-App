@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".FullScoreTableActivity">
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+       android:height="20dp"
+       android:layout_marginLeft="140dp"
+        android:textStyle="bold"
+        android:text="@string/ScoreTable"
+        ></TextView>
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:name="com.example.hw1_minsweeper.BegginersFragment"
+        android:id="@+id/TopTableFragment"
+        android:layout_marginTop="20dp"
+        android:layout_weight="0.25"></fragment>
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_marginTop="150dp"
+            android:name="com.example.hw1_minsweeper.IntermediateFragment"
+            android:id="@+id/MiddleTableFragment"
+            android:layout_height="120dp"
+            android:layout_weight="0.25"
+            ></fragment>
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_marginTop="280dp"
+        android:name="com.example.hw1_minsweeper.ExpertFragment"
+        android:id="@+id/BottomTableFragment"
+        android:layout_height="120dp"
+        ></fragment>
+<Button
+    android:layout_width="100dp"
+    android:layout_height="50dp"
+    android:layout_marginTop="405dp"
+    android:layout_marginLeft="115dp"
+    android:text="BACK"
+    android:id="@+id/Back"
+    ></Button>
+
+</RelativeLayout>

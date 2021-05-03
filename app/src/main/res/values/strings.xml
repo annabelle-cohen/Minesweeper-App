@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Hw1_Minsweeper</string>
+    <string name="Beginner">Beginner</string>
+    <string name="Intermediate">Intermediate</string>
+    <string name="Expert">Expert</string>
+    <string name="app_name_activity1">Minesweeper</string>
+    <string name="start">Start</string>
+    <string name="newGame">New Game</string>
+    <string name="stop"> Stop</string>
+    <string name="exit">EXIT</string>
+    <string name="level">Level Chose</string>
+    <string name="BeginnerTable">Beginners Scores</string>
+    <string name="InterTable">Intermediates Scores</string>
+    <string name="ExpertTable">Experts Scores</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="ScoreTable">Scores Table</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

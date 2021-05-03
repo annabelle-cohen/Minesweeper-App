@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout2_mines"
+    tools:context=".SecondActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/timerText"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            android:textSize="15dp"
+            android:textColor="@color/clockColor"
+            android:textStyle="bold"
+            android:focusableInTouchMode="false"
+            android:focusable="false"
+            android:layout_weight="0.5"
+            android:text="here is timer"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/minesLeft"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            android:textSize="13dp"
+            android:textColor="@color/clockColor"
+            android:textStyle="bold"
+            android:focusableInTouchMode="false"
+            android:focusable="false"
+            android:layout_weight="0.5"
+            android:text="here is mines left"
+            >
+        </TextView>
+
+        <GridView
+            android:id="@+id/gridView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/gray"
+            android:layout_marginLeft="2dp"
+            android:numColumns="3"
+            android:focusable="true"
+            android:clickable="true"
+            android:layout_weight="6"
+            >
+        </GridView>
+        <Button
+            android:id="@+id/stopButton"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/stop"
+            android:textColor="@color/red"
+            android:layout_marginLeft="140dp"
+            android:layout_marginRight="90dp"
+            >
+        </Button>
+        <Button
+            android:id="@+id/newGameButton"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/newGame"
+            android:layout_marginLeft="140dp"
+            android:layout_marginRight="90dp"
+
+            >
+        </Button>
+    </LinearLayout>
+</RelativeLayout>
